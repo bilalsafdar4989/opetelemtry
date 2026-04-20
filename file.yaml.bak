@@ -1,0 +1,935 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"ad","app.kubernetes.io/name":"ad","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"ad"},"name":"ad","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"ad"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:20Z"
+    labels:
+      app.kubernetes.io/component: ad
+      app.kubernetes.io/name: ad
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: ad
+    name: ad
+    namespace: default
+    resourceVersion: "3493"
+    uid: 5800a61a-1d84-4839-9e9f-aa36cbb634f9
+  spec:
+    clusterIP: 172.20.238.97
+    clusterIPs:
+    - 172.20.238.97
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: ad
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"cart","app.kubernetes.io/name":"cart","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"cart"},"name":"cart","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"cart"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:21Z"
+    labels:
+      app.kubernetes.io/component: cart
+      app.kubernetes.io/name: cart
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: cart
+    name: cart
+    namespace: default
+    resourceVersion: "3497"
+    uid: 9fca213f-4bfe-428c-a81c-46c7ec22f0b2
+  spec:
+    clusterIP: 172.20.18.194
+    clusterIPs:
+    - 172.20.18.194
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: cart
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"checkout","app.kubernetes.io/name":"checkout","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"checkout"},"name":"checkout","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"checkout"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:21Z"
+    labels:
+      app.kubernetes.io/component: checkout
+      app.kubernetes.io/name: checkout
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: checkout
+    name: checkout
+    namespace: default
+    resourceVersion: "3502"
+    uid: 2e04af60-b569-4eb1-a27b-6e894a45667c
+  spec:
+    clusterIP: 172.20.87.28
+    clusterIPs:
+    - 172.20.87.28
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: checkout
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"currency","app.kubernetes.io/name":"currency","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"currency"},"name":"currency","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"currency"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:22Z"
+    labels:
+      app.kubernetes.io/component: currency
+      app.kubernetes.io/name: currency
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: currency
+    name: currency
+    namespace: default
+    resourceVersion: "3509"
+    uid: fb662b73-e0cb-40dd-9a44-814ddc82a8c1
+  spec:
+    clusterIP: 172.20.218.180
+    clusterIPs:
+    - 172.20.218.180
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: currency
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"email","app.kubernetes.io/name":"email","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"email"},"name":"email","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"email"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:22Z"
+    labels:
+      app.kubernetes.io/component: email
+      app.kubernetes.io/name: email
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: email
+    name: email
+    namespace: default
+    resourceVersion: "3515"
+    uid: b981d616-7c21-400b-90b9-f410ea1002be
+  spec:
+    clusterIP: 172.20.82.162
+    clusterIPs:
+    - 172.20.82.162
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: email
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"flagd","app.kubernetes.io/name":"flagd","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"flagd"},"name":"flagd","namespace":"default"},"spec":{"ports":[{"name":"rpc","port":8013,"targetPort":8013},{"name":"ofrep","port":8016,"targetPort":8016},{"name":"tcp-service-0","port":4000,"targetPort":4000}],"selector":{"opentelemetry.io/name":"flagd"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:22Z"
+    labels:
+      app.kubernetes.io/component: flagd
+      app.kubernetes.io/name: flagd
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: flagd
+    name: flagd
+    namespace: default
+    resourceVersion: "3521"
+    uid: 3d36018e-f284-4d15-8079-414932a9f6e9
+  spec:
+    clusterIP: 172.20.162.189
+    clusterIPs:
+    - 172.20.162.189
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: rpc
+      port: 8013
+      protocol: TCP
+      targetPort: 8013
+    - name: ofrep
+      port: 8016
+      protocol: TCP
+      targetPort: 8016
+    - name: tcp-service-0
+      port: 4000
+      protocol: TCP
+      targetPort: 4000
+    selector:
+      opentelemetry.io/name: flagd
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"frontend","app.kubernetes.io/name":"frontend","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"frontend"},"name":"frontend","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"frontend"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:23Z"
+    labels:
+      app.kubernetes.io/component: frontend
+      app.kubernetes.io/name: frontend
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: frontend
+    name: frontend
+    namespace: default
+    resourceVersion: "3526"
+    uid: f460d526-a320-45ba-ba41-0abcba469b9e
+  spec:
+    clusterIP: 172.20.86.148
+    clusterIPs:
+    - 172.20.86.148
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: frontend
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"frontend-proxy","app.kubernetes.io/name":"frontend-proxy","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"frontend-proxy"},"name":"frontend-proxy","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"frontend-proxy"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:24Z"
+    labels:
+      app.kubernetes.io/component: frontend-proxy
+      app.kubernetes.io/name: frontend-proxy
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: frontend-proxy
+    name: frontend-proxy
+    namespace: default
+    resourceVersion: "3533"
+    uid: 4c1cb917-6334-4860-a043-4d5fab47911c
+  spec:
+    clusterIP: 172.20.228.235
+    clusterIPs:
+    - 172.20.228.235
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: frontend-proxy
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"image-provider","app.kubernetes.io/name":"image-provider","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"image-provider"},"name":"image-provider","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8081,"targetPort":8081}],"selector":{"opentelemetry.io/name":"image-provider"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:24Z"
+    labels:
+      app.kubernetes.io/component: image-provider
+      app.kubernetes.io/name: image-provider
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: image-provider
+    name: image-provider
+    namespace: default
+    resourceVersion: "3538"
+    uid: 390c9b42-c324-4df6-a207-7c25f0b0b17f
+  spec:
+    clusterIP: 172.20.174.185
+    clusterIPs:
+    - 172.20.174.185
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8081
+      protocol: TCP
+      targetPort: 8081
+    selector:
+      opentelemetry.io/name: image-provider
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"service-agent","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"jaeger","app.kubernetes.io/version":"1.53.0"},"name":"jaeger-agent","namespace":"default"},"spec":{"clusterIP":"None","ports":[{"name":"zk-compact-trft","port":5775,"protocol":"UDP","targetPort":0},{"name":"config-rest","port":5778,"targetPort":0},{"name":"jg-compact-trft","port":6831,"protocol":"UDP","targetPort":0},{"name":"jg-binary-trft","port":6832,"protocol":"UDP","targetPort":0}],"selector":{"app.kubernetes.io/component":"all-in-one","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"jaeger"}}}
+    creationTimestamp: "2026-04-11T04:37:15Z"
+    labels:
+      app.kubernetes.io/component: service-agent
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: jaeger
+      app.kubernetes.io/version: 1.53.0
+    name: jaeger-agent
+    namespace: default
+    resourceVersion: "3451"
+    uid: 5590cebb-17d1-4913-9955-c6787d279a95
+  spec:
+    clusterIP: None
+    clusterIPs:
+    - None
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: zk-compact-trft
+      port: 5775
+      protocol: UDP
+      targetPort: 5775
+    - name: config-rest
+      port: 5778
+      protocol: TCP
+      targetPort: 5778
+    - name: jg-compact-trft
+      port: 6831
+      protocol: UDP
+      targetPort: 6831
+    - name: jg-binary-trft
+      port: 6832
+      protocol: UDP
+      targetPort: 6832
+    selector:
+      app.kubernetes.io/component: all-in-one
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: jaeger
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"service-collector","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"jaeger","app.kubernetes.io/version":"1.53.0"},"name":"jaeger-collector","namespace":"default"},"spec":{"clusterIP":"None","ports":[{"appProtocol":"http","name":"http-zipkin","port":9411,"targetPort":0},{"appProtocol":"grpc","name":"grpc-http","port":14250,"targetPort":0},{"name":"c-tchan-trft","port":14267,"targetPort":0},{"appProtocol":"http","name":"http-c-binary-trft","port":14268,"targetPort":0},{"appProtocol":"grpc","name":"otlp-grpc","port":4317,"targetPort":0},{"appProtocol":"http","name":"otlp-http","port":4318,"targetPort":0}],"selector":{"app.kubernetes.io/component":"all-in-one","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"jaeger"}}}
+    creationTimestamp: "2026-04-11T04:37:15Z"
+    labels:
+      app.kubernetes.io/component: service-collector
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: jaeger
+      app.kubernetes.io/version: 1.53.0
+    name: jaeger-collector
+    namespace: default
+    resourceVersion: "3456"
+    uid: 8c5d155f-6776-4169-91f0-a660dad184e7
+  spec:
+    clusterIP: None
+    clusterIPs:
+    - None
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - appProtocol: http
+      name: http-zipkin
+      port: 9411
+      protocol: TCP
+      targetPort: 9411
+    - appProtocol: grpc
+      name: grpc-http
+      port: 14250
+      protocol: TCP
+      targetPort: 14250
+    - name: c-tchan-trft
+      port: 14267
+      protocol: TCP
+      targetPort: 14267
+    - appProtocol: http
+      name: http-c-binary-trft
+      port: 14268
+      protocol: TCP
+      targetPort: 14268
+    - appProtocol: grpc
+      name: otlp-grpc
+      port: 4317
+      protocol: TCP
+      targetPort: 4317
+    - appProtocol: http
+      name: otlp-http
+      port: 4318
+      protocol: TCP
+      targetPort: 4318
+    selector:
+      app.kubernetes.io/component: all-in-one
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: jaeger
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"service-query","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"jaeger","app.kubernetes.io/version":"1.53.0"},"name":"jaeger-query","namespace":"default"},"spec":{"clusterIP":"None","ports":[{"name":"http-query","port":16686,"targetPort":16686},{"name":"grpc-query","port":16685,"targetPort":16685}],"selector":{"app.kubernetes.io/component":"all-in-one","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"jaeger"}}}
+    creationTimestamp: "2026-04-11T04:37:16Z"
+    labels:
+      app.kubernetes.io/component: service-query
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: jaeger
+      app.kubernetes.io/version: 1.53.0
+    name: jaeger-query
+    namespace: default
+    resourceVersion: "3460"
+    uid: 512429b6-6518-41a8-8957-84d8bb57d2ca
+  spec:
+    clusterIP: None
+    clusterIPs:
+    - None
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: http-query
+      port: 16686
+      protocol: TCP
+      targetPort: 16686
+    - name: grpc-query
+      port: 16685
+      protocol: TCP
+      targetPort: 16685
+    selector:
+      app.kubernetes.io/component: all-in-one
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: jaeger
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"kafka","app.kubernetes.io/name":"kafka","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"kafka"},"name":"kafka","namespace":"default"},"spec":{"ports":[{"name":"plaintext","port":9092,"targetPort":9092},{"name":"controller","port":9093,"targetPort":9093}],"selector":{"opentelemetry.io/name":"kafka"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:25Z"
+    labels:
+      app.kubernetes.io/component: kafka
+      app.kubernetes.io/name: kafka
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: kafka
+    name: kafka
+    namespace: default
+    resourceVersion: "3542"
+    uid: 0e64deac-73b1-4cef-8bc2-bfd50a451d61
+  spec:
+    clusterIP: 172.20.22.85
+    clusterIPs:
+    - 172.20.22.85
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: plaintext
+      port: 9092
+      protocol: TCP
+      targetPort: 9092
+    - name: controller
+      port: 9093
+      protocol: TCP
+      targetPort: 9093
+    selector:
+      opentelemetry.io/name: kafka
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: "2026-04-11T04:23:02Z"
+    labels:
+      component: apiserver
+      provider: kubernetes
+    name: kubernetes
+    namespace: default
+    resourceVersion: "195"
+    uid: 3eed91ea-f469-4069-8798-8036df589969
+  spec:
+    clusterIP: 172.20.0.1
+    clusterIPs:
+    - 172.20.0.1
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: 443
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"load-generator","app.kubernetes.io/name":"load-generator","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"load-generator"},"name":"load-generator","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8089,"targetPort":8089}],"selector":{"opentelemetry.io/name":"load-generator"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:25Z"
+    labels:
+      app.kubernetes.io/component: load-generator
+      app.kubernetes.io/name: load-generator
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: load-generator
+    name: load-generator
+    namespace: default
+    resourceVersion: "3547"
+    uid: e385b19d-5b8d-4a0b-84fb-32b1546039e0
+  spec:
+    clusterIP: 172.20.102.216
+    clusterIPs:
+    - 172.20.102.216
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8089
+      protocol: TCP
+      targetPort: 8089
+    selector:
+      opentelemetry.io/name: load-generator
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"opensearch","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"opensearch","app.kubernetes.io/version":"3.2.0"},"name":"opensearch","namespace":"default"},"spec":{"ports":[{"name":"http","port":9200,"protocol":"TCP"},{"name":"transport","port":9300,"protocol":"TCP"},{"name":"metrics","port":9600,"protocol":"TCP"}],"selector":{"app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"opensearch"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:18Z"
+    labels:
+      app.kubernetes.io/component: opensearch
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: opensearch
+      app.kubernetes.io/version: 3.2.0
+    name: opensearch
+    namespace: default
+    resourceVersion: "3468"
+    uid: ff12ce58-da4b-4c6e-8b94-aa6ddd324508
+  spec:
+    clusterIP: 172.20.16.111
+    clusterIPs:
+    - 172.20.16.111
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: http
+      port: 9200
+      protocol: TCP
+      targetPort: 9200
+    - name: transport
+      port: 9300
+      protocol: TCP
+      targetPort: 9300
+    - name: metrics
+      port: 9600
+      protocol: TCP
+      targetPort: 9600
+    selector:
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: opensearch
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"service.alpha.kubernetes.io/tolerate-unready-endpoints":"true"},"labels":{"app.kubernetes.io/component":"opensearch","app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"opensearch","app.kubernetes.io/version":"3.2.0"},"name":"opensearch-headless","namespace":"default"},"spec":{"clusterIP":"None","ports":[{"name":"http","port":9200},{"name":"transport","port":9300},{"name":"metrics","port":9600}],"publishNotReadyAddresses":true,"selector":{"app.kubernetes.io/instance":"opentelemetry-demo","app.kubernetes.io/name":"opensearch"}}}
+      service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+    creationTimestamp: "2026-04-11T04:37:18Z"
+    labels:
+      app.kubernetes.io/component: opensearch
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: opensearch
+      app.kubernetes.io/version: 3.2.0
+    name: opensearch-headless
+    namespace: default
+    resourceVersion: "3474"
+    uid: 5fa7ea35-ca72-484a-bbe4-da8ef0ee8a23
+  spec:
+    clusterIP: None
+    clusterIPs:
+    - None
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: http
+      port: 9200
+      protocol: TCP
+      targetPort: 9200
+    - name: transport
+      port: 9300
+      protocol: TCP
+      targetPort: 9300
+    - name: metrics
+      port: 9600
+      protocol: TCP
+      targetPort: 9600
+    publishNotReadyAddresses: true
+    selector:
+      app.kubernetes.io/instance: opentelemetry-demo
+      app.kubernetes.io/name: opensearch
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"payment","app.kubernetes.io/name":"payment","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"payment"},"name":"payment","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"payment"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:26Z"
+    labels:
+      app.kubernetes.io/component: payment
+      app.kubernetes.io/name: payment
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: payment
+    name: payment
+    namespace: default
+    resourceVersion: "3552"
+    uid: f3900260-d3dc-4ecc-820b-caee9d5698a8
+  spec:
+    clusterIP: 172.20.18.203
+    clusterIPs:
+    - 172.20.18.203
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: payment
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"postgresql","app.kubernetes.io/name":"postgresql","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"postgresql"},"name":"postgresql","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":5432,"targetPort":5432}],"selector":{"opentelemetry.io/name":"postgresql"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:26Z"
+    labels:
+      app.kubernetes.io/component: postgresql
+      app.kubernetes.io/name: postgresql
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: postgresql
+    name: postgresql
+    namespace: default
+    resourceVersion: "3557"
+    uid: 7f8a794b-4be3-4cdd-aac1-91b64437910f
+  spec:
+    clusterIP: 172.20.61.81
+    clusterIPs:
+    - 172.20.61.81
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 5432
+      protocol: TCP
+      targetPort: 5432
+    selector:
+      opentelemetry.io/name: postgresql
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"product-catalog","app.kubernetes.io/name":"product-catalog","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"product-catalog"},"name":"product-catalog","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"product-catalog"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:27Z"
+    labels:
+      app.kubernetes.io/component: product-catalog
+      app.kubernetes.io/name: product-catalog
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: product-catalog
+    name: product-catalog
+    namespace: default
+    resourceVersion: "3562"
+    uid: acdc4cd9-fa92-412f-8e75-a27cd9c00853
+  spec:
+    clusterIP: 172.20.105.79
+    clusterIPs:
+    - 172.20.105.79
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: product-catalog
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"quote","app.kubernetes.io/name":"quote","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"quote"},"name":"quote","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"quote"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:27Z"
+    labels:
+      app.kubernetes.io/component: quote
+      app.kubernetes.io/name: quote
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: quote
+    name: quote
+    namespace: default
+    resourceVersion: "3568"
+    uid: 88f70e07-1a8e-402d-a5f3-8756931bed5e
+  spec:
+    clusterIP: 172.20.118.186
+    clusterIPs:
+    - 172.20.118.186
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: quote
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"recommendation","app.kubernetes.io/name":"recommendation","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"recommendation"},"name":"recommendation","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"recommendation"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:28Z"
+    labels:
+      app.kubernetes.io/component: recommendation
+      app.kubernetes.io/name: recommendation
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: recommendation
+    name: recommendation
+    namespace: default
+    resourceVersion: "3574"
+    uid: 98e3d222-9722-4ec9-91b5-41d5b08a5fb5
+  spec:
+    clusterIP: 172.20.55.151
+    clusterIPs:
+    - 172.20.55.151
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: recommendation
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"shipping","app.kubernetes.io/name":"shipping","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"shipping"},"name":"shipping","namespace":"default"},"spec":{"ports":[{"name":"tcp-service","port":8080,"targetPort":8080}],"selector":{"opentelemetry.io/name":"shipping"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:28Z"
+    labels:
+      app.kubernetes.io/component: shipping
+      app.kubernetes.io/name: shipping
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: shipping
+    name: shipping
+    namespace: default
+    resourceVersion: "3579"
+    uid: a4b3d8a8-4d25-4c02-a7ad-07ba5b5baa23
+  spec:
+    clusterIP: 172.20.158.127
+    clusterIPs:
+    - 172.20.158.127
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: tcp-service
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      opentelemetry.io/name: shipping
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app.kubernetes.io/component":"valkey-cart","app.kubernetes.io/name":"valkey-cart","app.kubernetes.io/part-of":"opentelemetry-demo","app.kubernetes.io/version":"2.1.3","opentelemetry.io/name":"valkey-cart"},"name":"valkey-cart","namespace":"default"},"spec":{"ports":[{"name":"valkey-cart","port":6379,"targetPort":6379}],"selector":{"opentelemetry.io/name":"valkey-cart"},"type":"ClusterIP"}}
+    creationTimestamp: "2026-04-11T04:37:29Z"
+    labels:
+      app.kubernetes.io/component: valkey-cart
+      app.kubernetes.io/name: valkey-cart
+      app.kubernetes.io/part-of: opentelemetry-demo
+      app.kubernetes.io/version: 2.1.3
+      opentelemetry.io/name: valkey-cart
+    name: valkey-cart
+    namespace: default
+    resourceVersion: "3585"
+    uid: 6ead6573-1fb4-4245-b95a-80d8f50964a5
+  spec:
+    clusterIP: 172.20.113.11
+    clusterIPs:
+    - 172.20.113.11
+    internalTrafficPolicy: Cluster
+    ipFamilies:
+    - IPv4
+    ipFamilyPolicy: SingleStack
+    ports:
+    - name: valkey-cart
+      port: 6379
+      protocol: TCP
+      targetPort: 6379
+    selector:
+      opentelemetry.io/name: valkey-cart
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+kind: List
+metadata:
+  resourceVersion: ""
