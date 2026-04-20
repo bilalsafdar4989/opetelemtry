@@ -2,9 +2,7 @@
   "apiVersion": "apps/v1",
   "kind": "Deployment",
   "metadata": {
-    "annotations": {
-      "argocd.argoproj.io/tracking-id": "otel-demo:apps/Deployment:otel-demo/grafana"
-    },
+    "annotations": {},
     "labels": {
       "app.kubernetes.io/instance": "opentelemetry-demo",
       "app.kubernetes.io/name": "grafana",

@@ -1,10 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: otel-demo
 resources:
-  - deploy-grafana.json
-  - deploy-otel-collector.json
-  - deploy-prometheus.json
-  - svc-grafana.json
-  - svc-otel-collector.json
-  - svc-prometheus.json
+  - deploy-default-jaeger.json
+  - deploy-otel-demo-grafana.json
+  - deploy-otel-demo-otel-collector.json
+  - deploy-otel-demo-prometheus.json
+  - ing-default-otel-demo-ingress.json
+  - sts-default-opensearch.json
